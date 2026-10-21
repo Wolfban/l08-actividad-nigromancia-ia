@@ -16,7 +16,7 @@ import io.github.kevinah95.l08_activity.core.GameObject
 class March(gameObject: GameObject, var step: Double) : Behaviour(gameObject) {
     override fun onFrame(dt: Double) {
         if (gameObject.hop > 0.0) {
-            gameObject.hop = (gameObject.hop - dt * 10.0).coerceAtLeast(0.0)
+            gameObject.hop = (gameObject.hop - dt * 10.0)
         }
     }
 
